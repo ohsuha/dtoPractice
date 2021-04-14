@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 @Getter
 @NoArgsConstructor
-public class PostsSaveRequestDto {
+public class PostsSaveRequest {
 
     @NotBlank(message = "title is required")
     private String title;
@@ -21,7 +21,7 @@ public class PostsSaveRequestDto {
     private String author;
 
     @Builder
-    public PostsSaveRequestDto(String title, String content, String author){
+    public PostsSaveRequest(String title, String content, String author){
         this.title = title;
         this.author = author;
         this.content = content;
@@ -37,7 +37,7 @@ public class PostsSaveRequestDto {
 
     @Override
     public String toString() {
-        return "PostsSaveRequestDto{" +
+        return "PostsSaveRequest{" +
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", author='" + author + '\'' +

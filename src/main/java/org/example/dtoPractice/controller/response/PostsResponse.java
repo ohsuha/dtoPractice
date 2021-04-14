@@ -1,9 +1,9 @@
-package org.example.dtoPractice.controller.viewmodel;
+package org.example.dtoPractice.controller.response;
 
 import lombok.Builder;
 import lombok.Getter;
 
-public class PostsViewModel {
+public class PostsResponse {
 
     @Getter
     @Builder
